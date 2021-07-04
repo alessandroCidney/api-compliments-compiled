@@ -123,8 +123,12 @@ app.use(function (err, request, response, next) {
  * - A biblioteca do Express, por padrão, não consegue capturar erros vindos de funções async
  * - É necessário instalar a biblioteca express-async-errors
  * */
+
+// Configurando porta para o Heroku
+var port = process.env.PORT || 8080
+
 // Inicializando o servidor em http://localhost:3000
-app.listen(3000, function () { return console.log("Server is running!"); });
+app.listen(port, function () { return console.log("Server is running!"); });
 // yarn tsc
 // node src/server.js
 // Para facilitar o desenvolvimento, utilize:
