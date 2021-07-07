@@ -70,13 +70,7 @@ app.use(cors_1.default());
 // app.use(cors({
 //     origin: ""
 // }));
-/**
- * GET    => Buscar informações
- * POST   => Inserir informações
- * DELETE => Remover informações
- * PUT    => Alterar informações
- * PATCH  => Alterar uma informação específica
- */
+
 /**
  * Tipos de parâmetros (requisições)
  *
