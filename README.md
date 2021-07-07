@@ -32,6 +32,7 @@ A API contém as rotas:
 - Não necessita de autenticação.
 
 #### Exemplo 
+``` javascript
 let results = await fetch(`${baseURL}/login`, {
 	method: 'POST',
 	headers: {
@@ -45,7 +46,7 @@ let results = await fetch(`${baseURL}/login`, {
 .then(response => response.json())
 .then(data => data)
 .catch(err => err)
-
+```
 
 ### /users (POST)
 - Método POST.
@@ -53,6 +54,7 @@ let results = await fetch(`${baseURL}/login`, {
 - Não necessita de autenticação.
 
 #### Exemplo 
+``` javascript
 let results = await fetch(`${baseURL}/users`, {
 	method: 'POST',
 	headers: {
@@ -68,6 +70,7 @@ let results = await fetch(`${baseURL}/users`, {
 .then(response => response.json())
 .then(data => data)
 .catch(err => err)
+```
 
 - Observação: Por padrão, se não informado, o valor de admin é false
 
@@ -77,6 +80,7 @@ let results = await fetch(`${baseURL}/users`, {
 - Retorna uma lista com os dados dos usuários (exceto a senha).
 
 #### Exemplo
+``` javascript
 let results = await fetch(`${baseURL}/users`, {
 	method: 'GET',
 	headers: {
@@ -87,6 +91,7 @@ let results = await fetch(`${baseURL}/users`, {
 .then(response => response.json())
 .then(data => data)
 .catch(err => err)
+```
 
 ### /tags (POST)
 - Método POST.
@@ -95,6 +100,7 @@ let results = await fetch(`${baseURL}/users`, {
 - O usuário criador precisa ser admin.
 
 #### Exemplo
+``` javascript
 let results = await fetch(`${baseURL}/tags`, {
 	method: 'POST',
 	headers: {
@@ -108,6 +114,7 @@ let results = await fetch(`${baseURL}/tags`, {
 .then(response => response.json())
 .then(data => data)
 .catch(err => err)
+```
 
 ### /tags (GET)
 - Método GET.
@@ -115,6 +122,7 @@ let results = await fetch(`${baseURL}/tags`, {
 - Necessita de confirmação de autenticação mediante a passagem do token de autenticação no campo "Authorization" do Header da requisição.
 
 #### Exemplo
+```javascript
 let results = await fetch(`${baseURL}/tags`, {
 	method: 'GET',
 	headers: {
@@ -125,6 +133,7 @@ let results = await fetch(`${baseURL}/tags`, {
 .then(response => response.json())
 .then(data => data)
 .catch(err => err)
+```
 
 ### /compliment (POST)
 - Método POST.
@@ -133,6 +142,7 @@ let results = await fetch(`${baseURL}/tags`, {
 - Necessita de confirmação de autenticação mediante a passagem do token de autenticação no campo "Authorization" do Header da requisição.
 
 #### Exemplo
+```javascript
 let results = await fetch(`${baseURL}/compliment`, {
 	method: 'POST',
 	headers: {
@@ -148,6 +158,7 @@ let results = await fetch(`${baseURL}/compliment`, {
 .then(response => response.json())
 .then(data => data)
 .catch(err => err)
+```
 
 ### /users/compliments/send (GET)
 - Método GET.
@@ -156,6 +167,7 @@ let results = await fetch(`${baseURL}/compliment`, {
 - Retorna uma lista com informações sobre os elogios enviados.
 
 #### Exemplo
+```javascript
 let results = await fetch(`${baseURL}/users/compliments/send`, {
 	method: 'GET',
 	headers: {
@@ -166,6 +178,7 @@ let results = await fetch(`${baseURL}/users/compliments/send`, {
 .then(response => response.json())
 .then(data => data)
 .catch(err => err)
+```
 
 ### /users/compliments/receive (GET)
 - Método GET.
@@ -174,6 +187,7 @@ let results = await fetch(`${baseURL}/users/compliments/send`, {
 - Retorna uma lista com informações sobre os elogios recebidos.
 
 #### Exemplo
+```javascript
 let results = await fetch(`${baseURL}/users/compliments/receive`, {
 	method: 'GET',
 	headers: {
@@ -184,6 +198,7 @@ let results = await fetch(`${baseURL}/users/compliments/receive`, {
 .then(response => response.json())
 .then(data => data)
 .catch(err => err)
+```
 
 ## O que é a baseURL (URL Base)?
 A URL Base é a URL para a qual deve-se realizar as requisições.
