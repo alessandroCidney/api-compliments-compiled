@@ -4,7 +4,7 @@
 Esta é uma API desenvolvida utilizando o framework minimalista Express, na qual usuários podem se cadastrar e enviar elogios para outros usuários.
 
 ## Como utilizar?
-- Você pode baixar o projeto no localhost e ativá-lo através do terminal com o comando **yarn dev**. Depois, é só realizar as requisições através das rotas que serão retratadas mais abaixo (com exemplos em JavaScript).
+- Você pode baixar o projeto no localhost e ativá-lo através do terminal com o comando `yarn dev`. Depois, é só realizar as requisições através das rotas que serão retratadas mais abaixo (com exemplos em **JavaScript**).
 - Você também pode utilizá-lo através da plataforma **Valoriza**, que nada mais é do que uma versão do projeto com o front-end desenvolvido. Atualmente, o setor front-end ainda está sendo desenvolvido, mas você pode conferir a plataforma através do endereço https://alessandrocidney.github.io/front-end-api-compliments.
 
 ## Principais funcionalidades
