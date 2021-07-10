@@ -207,11 +207,17 @@ A URL Base é a URL para a qual deve-se realizar as requisições.
 
 ## Quais foram os pacotes utilizados no projeto?
 - Express e seus tipos (@types)
-- TypeScript e seus tipos(@types)
-- Ts-Node-Dev
-- Yarn
-- TypeORM e seus tipos
-- Sqlite3
+- bcryptjs e seus tipos (@types)
+- cors e seus tipos (@types)
+- JWT e seus tipos (@types)
+- uuid e seus tipos (@types)
+- ts-node-dev
+- TypeScript
+- Express Async Errors
+- Reflect Metadata
+- SQLite3
+- class-transformer
+- TypeORM
 
 ## Quando foi desenvolvida?
 Esta API foi desenvolvida em 2021 durante o evento NLW Together, disponibilizado pela Rocketseat.
