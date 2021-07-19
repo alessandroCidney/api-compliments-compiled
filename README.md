@@ -5,7 +5,11 @@ Esta é uma API desenvolvida utilizando o framework minimalista Express, na qual
 
 ## Como utilizar?
 - Você pode baixar o projeto no localhost e ativá-lo através do terminal com o comando `yarn dev`. Depois, é só realizar as requisições através das rotas que serão retratadas mais abaixo (com exemplos em **JavaScript**).
-- Você também pode utilizá-lo através da plataforma **Valoriza**, que nada mais é do que uma versão do projeto com o front-end desenvolvido. Atualmente, o setor front-end ainda está sendo desenvolvido, mas você pode conferir a plataforma através do endereço https://alessandrocidney.github.io/front-end-api-compliments.
+
+### **Atualização sobre o Front-End**
+O front-end do projeto não está mais hospedado no GitHub Pages. 
+
+Para colocá-lo em funcionamento, você pode baixar o front-end em sua máquina, juntamente com o back-end (cujo repositório pode ser acessado [aqui](https://github.com/alessandroCidney/api-compliments-compiled)), iniciando o servidor do back-end e acessando o **index.html** do front-end do projeto.
 
 ## Principais funcionalidades
 - Cadastro de novos usuários
